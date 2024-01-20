@@ -1,0 +1,10 @@
+//импорты
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import "root";
+@import "reset";
+@import "./blocks/footer";
+@import "./blocks/header";
+
+body {
+    font-family: Roboto;
+}
