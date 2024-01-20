@@ -65,10 +65,10 @@ h1 {
   margin-bottom: 40px;
 }
 h2 {
-  color: var(--primary-white);
+  color: var(--primary-blue);
   /* h2 */
   @include adaptiveValue(font-size, 35, 25);
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 h3 {
@@ -124,5 +124,5 @@ li {
   }
 }
 .container {
-  padding: 60px 10;
+  padding: 60px 10px;
 }

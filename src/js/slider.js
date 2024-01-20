@@ -19,11 +19,11 @@ export const swiper = new Swiper('.swiper', {
     // При достижении конца, перепрыгнуть в начало
     rewind: true,
     // Автовоспроизведение
-    // autoplay: {
-    //     delay: 1000,
-    //     //остановка при наведении
-    //     pauseOnMouseEnter: true
-    // },
+    autoplay: {
+        delay: 2500,
+        //остановка при наведении
+        pauseOnMouseEnter: true
+    },
     //скорость перелистывания
     speed: 2000,
 });
