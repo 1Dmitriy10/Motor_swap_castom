@@ -7,7 +7,7 @@ body {
     font-family: Roboto;
 }
 .container {
-    outline: 1px solid red;
+    // outline: 1px solid red;
     max-width: 1260px;
     margin: 0 auto;
     @media (max-width: 1200px) {
@@ -73,8 +73,8 @@ body {
     height: 100%;
 }
 
-@import "./blocks/footer";
 @import "./blocks/header";
+@import "./blocks/footer";
 @import "./blocks/burgerMenu";
 @import "./blocks/banner";
 @import "./blocks/about";
@@ -82,3 +82,4 @@ body {
 @import "./blocks/services";
 @import "./blocks/contacts";
 @import "./blocks/form";
+@import "./blocks/map";
