@@ -4,12 +4,11 @@
     top: 0;
     left: 0;
     z-index: 50;
-    min-height: 129px;
     background: var(--primary-blue);
 }
 .header__container {
     display: flex;
-    padding: 0;
+    padding: 10px 0;
     align-items: center;
     gap: 10px;
 }
@@ -17,8 +16,12 @@
     margin-right: in(1260, 50);
 }
 .logo {
-    width: 138.182px;
-    height: 124.332px;
+    width: 100.18px;
+    height: 89.991px;
+    @media (max-width: 600px) {
+        width: 65.18px;
+        height: 58.55px;
+    }
 }
 .nav {
     display: flex;

@@ -24,6 +24,7 @@
     }
     @media (max-width: 800px) {
         max-width: 100%;
+        padding: 15% 20px 0 20px;
     }
 }
 .banner__btn {
@@ -138,4 +139,7 @@ li.banner__text {
 .banner__content-box_big {
     max-width: 100%;
     padding-bottom: 0;
+    @media (max-width: 800px) {
+        padding: 15% 20px 0 20px;
+    }
 }

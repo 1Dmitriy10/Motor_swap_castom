@@ -1,11 +1,10 @@
 .footer {
     width: 100%;
-    min-height: 129px;
     background: var(--primary-blue);
 }
 .footer__container {
     display: flex;
-    padding: 0;
+    padding: 10px 0;
     align-items: center;
     gap: 10px;
     @media (max-width: 672px) {
@@ -14,10 +13,6 @@
 }
 .logo-link {
     margin-right: in(1260, 50);
-}
-.logo {
-    width: 138.182px;
-    height: 124.332px;
 }
 .nav {
     display: flex;
