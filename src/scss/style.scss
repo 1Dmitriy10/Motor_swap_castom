@@ -23,7 +23,7 @@ body {
         max-width: 540px;
     }
     @media (max-width: 500px) {
-        max-width: 334px;
+        max-width: auto;
     }
 }
 .btn {
@@ -78,3 +78,4 @@ body {
 @import "./blocks/banner";
 @import "./blocks/about";
 @import "./blocks/advantages";
+@import "./blocks/services";
