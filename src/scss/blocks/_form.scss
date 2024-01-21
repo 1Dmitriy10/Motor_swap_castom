@@ -1,0 +1,67 @@
+.form {
+    background: var(--primary-white);
+    border: 1px solid var(--primary-blue);
+    position: relative;
+    padding: 81px 25px 25px 25px;
+    ._error {
+        box-shadow: 0 0 15px red;
+    }
+}
+.form__title-box {
+    position: absolute;
+    width: 100%;
+    background: var(--primary-blue);
+    padding: 5px 45px;
+    top: 0;
+    left: 0;
+}
+.form__title {
+    margin-bottom: 0;
+    max-width: 340px;
+    text-align: center;
+}
+.form__row {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-blue);
+    font-size: 18px;
+    font-weight: 500;
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+.form__input {
+    border-radius: 5px;
+    background: var(--primary-gray);
+    padding: 5px;
+}
+.form__text-area {
+    min-height: 85px;
+    border-radius: 5px;
+    background: var(--primary-gray);
+    padding: 5px;
+}
+.send-message {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    &.active {
+        display: flex;
+    }
+}
+.send-message-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    &._red {
+        background-color: rgb(197, 34, 34);
+    }
+    &._green {
+        background-color: rgb(7, 255, 172);
+    }
+}
+.send-message-text {
+}

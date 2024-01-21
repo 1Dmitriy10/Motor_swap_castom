@@ -37,6 +37,7 @@ body {
     font-weight: 600;
     padding: 15px 30px;
     transition: 0.3s;
+    border: 1px solid var(--primary-blue);
     &:hover {
         transition: 0.3s;
         background: var(--primary-gray);
@@ -79,3 +80,5 @@ body {
 @import "./blocks/about";
 @import "./blocks/advantages";
 @import "./blocks/services";
+@import "./blocks/contacts";
+@import "./blocks/form";
