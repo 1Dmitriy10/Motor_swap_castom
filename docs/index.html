@@ -11,16 +11,54 @@
 </head>
 
 <body>
+    <div class="popup-bg">
+        <div class="popup-wrap">
+            <form class="form form__popup">
+                <div class="form__title-box">
+                    <div class="popup-exit">x</div>
+                    <h3 class="form__title">
+                        Оставтье заявку
+                        и мы с вами свяжемся
+                    </h3>
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="name">*имя</label>
+                    <input id="name" name="name" class="form__input _req" type="text">
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="tel">телефон</label>
+                    <input id="tel" name="tel" class="form__input" type="tel">
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="email">*email</label>
+                    <input id="email" name="email" class="form__input _req _email" type="email">
+                </div>
+                <div class="form__row">
+                    <label class="form__label" for="text">текст</label>
+                    <input id="text" name="text" class="form__text-area" type="text">
+                </div>
+                <div class="form__btn-box">
+                    <button class="form__btn btn">связаться с нами</button>
+                </div>
+            </form>
+            <!-- сообщение об ошибке -->
+            <div class="send-message">
+                <div class="send-message-wrap">
+                    <p class="send-message-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="header">
     <div class="container header__container">
-        <a href="#" class="logo-link">
+        <a href="#banner" class="logo-link">
             <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" class="logo"></picture>
         </a>
         <nav class="nav">
-            <a href="" class="nav__link">О компании</a>
-            <a href="" class="nav__link">Преимущеста</a>
-            <a href="" class="nav__link">Услуги</a>
-            <a href="" class="nav__link">Контакты</a>
+            <a href="#about" class="nav__link _scroll">О компании</a>
+            <a href="#advantages" class="nav__link _scroll">Преимущеста</a>
+            <a href="#services" class="nav__link _scroll">Услуги</a>
+            <a href="#contacts" class="nav__link _scroll">Контакты</a>
         </nav>
         <div class="header__contact-box">
             <a href="tel:+79883233799" class="header__contact-tel">
@@ -33,7 +71,7 @@
                 суббота: 9:00 - 16:00
             </p>
         </div>
-        <button class="btn header__btn">связаться с нами</button>
+        <button class="btn header__btn btn-form">Cвязаться с нами</button>
         <!-- Кнопка меню-бургера -->
         <button class="burger-menu-wrap">
             <span class="burger-menu"></span>
@@ -42,10 +80,10 @@
 </header>
 <nav class="nav_box-mob">
     <div class="nav_box-mob-list">
-        <a href="" class="nav__link">О компании</a>
-        <a href="" class="nav__link">Преимущеста</a>
-        <a href="" class="nav__link">Услуги</a>
-        <a href="" class="nav__link">Контакты</a>
+        <a href="#about" class="nav__link _scroll">О компании</a>
+        <a href="#advantages" class="nav__link _scroll">Преимущеста</a>
+        <a href="#services" class="nav__link _scroll">Услуги</a>
+        <a href="#contacts" class="nav__link _scroll">Контакты</a>
         <a href="tel:+79883233799" class="header__contact-tel">
             +7(988)323-37-99
         </a>
@@ -55,11 +93,11 @@
         <p class="header__contact-workt-day">
             суббота: 9:00 - 16:00
         </p>
-        <button class="btn header__btn header__btn_mob">связаться с нами</button>
+        <button class="btn header__btn header__btn_mob">Связаться с нами</button>
     </div>
 </nav>
     <main>
-        <section class='banner'>
+        <section class='banner' id="banner">
     <!-- Главный контейнер -->
     <div class="swiper">
         <div class="slider__nav">
@@ -88,12 +126,13 @@
                             слишком дорогого ремонта.
                         </li>
                         <li class="banner__text">
-                            Старый двигатель вышел из строя, и его ремонт нецелесообразен. Иногда мотор требует
-                            слишком дорогого ремонта
+                            Нужен двигатель помощнее. Далеко не всегда можно получить больше мощности и крутящего
+                            момента, если работать с тем, что стоит с завода. Свап — самый простой способ получить более
+                            мощный автомобиль.
                         </li>
                     </ul>
                 </div>
-                <button class="btn_secondary banner__btn">К услуге</button>
+                <a href="#svap" class="btn_secondary banner__btn _scroll">К услуге</a>
             </div>
             <div class="swiper-slide banner__slider">
                 <picture><source srcset="img/banner/slide_svap-2.webp" type="image/webp"><img src="img/banner/slide_svap-2.png" alt="" class="img-bg banner__bg"></picture>
@@ -127,7 +166,7 @@
                         Пескоструй - это абразивная обработка (очистка) различных поверхностей.
                     </p>
                 </div>
-                <button class="btn_secondary banner__btn">К услуге</button>
+                <a href="#metob" class="btn_secondary banner__btn _scroll">К услуге</a>
             </div>
             <div class="swiper-slide banner__slider">
                 <picture><source srcset="img/banner/slide_svap-3.webp" type="image/webp"><img src="img/banner/slide_svap-3.png" alt="" class="img-bg banner__bg"></picture>
@@ -162,13 +201,13 @@
                         законодательства, согласно всем регламентирующим документам, применяемым в ГИБДД.
                     </p>
                 </div>
-                <button class="btn_secondary banner__btn">К услуге</button>
+                <a href="#pts" class="btn_secondary banner__btn _scroll">К услуге</a>
             </div>
         </div>
         <!-- Стрелки -->
     </div>
 </section>
-        <section class='about'>
+        <section class='about' id="about">
     <div class='container about__container'>
         <h1 class="about__title">
             Motor Swap Castom
@@ -189,7 +228,7 @@
         </p>
     </div>
 </section>
-        <section class='advantages'>
+        <section class='advantages' id="advantages">
     <div class='container advantages__container'>
         <h2 class="advantages__title">
             Преимущества
@@ -200,7 +239,7 @@
                     <img src="img/advantages/icon-1.svg" alt="" class="advantages__card-img">
                 </div>
                 <p class="advantages__card-text">
-                    невысокий расход топлива.
+                    Невысокий расход топлива.
                 </p>
             </div>
             <div class="advantages__card">
@@ -208,7 +247,7 @@
                     <img src="img/advantages/icon-2.svg" alt="" class="advantages__card-img">
                 </div>
                 <p class="advantages__card-text">
-                    в случае необходимости ремонта - больших сложностей в его проведении не возникает
+                    В случае необходимости ремонта - больших сложностей в его проведении не возникает
                 </p>
             </div>
             <div class="advantages__card">
@@ -216,7 +255,7 @@
                     <img src="img/advantages/icon-3.svg" alt="" class="advantages__card-img">
                 </div>
                 <p class="advantages__card-text">
-                    мощный разгон на невысоких оборотах и легкая проходимость сложных участков дорог
+                    Мощный разгон на невысоких оборотах и легкая проходимость сложных участков дорог
                 </p>
             </div>
             <div class="advantages__card">
@@ -225,7 +264,7 @@
                 </div>
                 <p class="advantages__card-text">
                     Все двигатели которые мы предлагаем - это контрактные двигатели высокого качества с малым пробегом,
-                    привезенные из Японии или европпы
+                    привезенные из Японии или Европпы
                 </p>
             </div>
             <div class="advantages__card">
@@ -233,7 +272,7 @@
                     <img src="img/advantages/icon-5.svg" alt="" class="advantages__card-img">
                 </div>
                 <p class="advantages__card-text">
-                    Все двигатели можно легко переводятся на газ, при этом двигатель не сколько не теряет в мощности.
+                    Все двигатели можно легко перевести на газ, при этом двигатель совершенно не теряет в мощности.
                 </p>
             </div>
             <div class="advantages__card">
@@ -247,13 +286,13 @@
         </div>
     </div>
 </section>
-        <section class='services'>
+        <section class='services' id="services">
     <div class='container sercices__container'>
         <h2 class="sercices__title">
             Услуги
         </h2>
         <div class="services__card-box">
-            <div class="services__card">
+            <div class="services__card" id="svap">
                 <picture><source srcset="img/services/services__card-img-1.webp" type="image/webp"><img src="img/services/services__card-img-1.png" alt="" class="img-bg service__card-bg"></picture>
                 <div class="services__card-content-box">
                     <h3 class="services__card-title">
@@ -286,11 +325,11 @@
                         </li>
                     </ul>
                 </div>
-                <button class="btn service__card-btn">
-                    связаться с нами
+                <button class="btn service__card-btn btn-form">
+                    Связаться с нами
                 </button>
             </div>
-            <div class="services__card">
+            <div class="services__card" id="metob">
                 <picture><source srcset="img/services/services__card-img-2.webp" type="image/webp"><img src="img/services/services__card-img-2.png" alt="" class="img-bg service__card-bg"></picture>
                 <div class="services__card-content-box">
                     <h3 class="services__card-title">
@@ -319,7 +358,7 @@
                             Гибка металла
                         </li>
                         <li class="services__card-list-item">
-                            Электро эрозия
+                            Электроэрозия
                         </li>
                         <li class="services__card-list-item">
                             Порошковая покраска
@@ -329,11 +368,11 @@
                         </li>
                     </ul>
                 </div>
-                <button class="btn service__card-btn">
-                    связаться с нами
+                <button class="btn service__card-btn btn-form">
+                    Связаться с нами
                 </button>
             </div>
-            <div class="services__card">
+            <div class="services__card" id="pts">
                 <picture><source srcset="img/services/services__card-img-3.webp" type="image/webp"><img src="img/services/services__card-img-3.png" alt="" class="img-bg service__card-bg"></picture>
                 <div class="services__card-content-box">
                     <h3 class="services__card-title">
@@ -344,36 +383,36 @@
                     </p>
                     <ul>
                         <li class="services__card-list-item">
-                            Оформление и внесение изменений в конструкцию транспортного средства.
+                            оформление и внесение изменений в конструкцию транспортного средства.
                         </li>
                         <li class="services__card-list-item">
-                            Оформление силовых обвесов.
+                            оформление силовых обвесов.
                         </li>
                         <li class="services__card-list-item">
-                            Оформление ДВС и трансмиссии
+                            оформление ДВС и трансмиссии
                         </li>
                         <li class="services__card-list-item">
-                            Оформление ГБО
+                            оформление ГБО
                         </li>
                         <li class="services__card-list-item">
-                            Изменение категории
+                            изменение категории
                         </li>
                         <li class="services__card-list-item">
-                            Нестандартные ситуации.
+                            нестандартные ситуации.
                         </li>
                         <li class="services__card-list-item">
-                            Стараемся максимально помочь клиенту в рамках законодательства российской федерации
+                            стараемся максимально помочь клиенту в рамках законодательства российской федерации
                         </li>
                     </ul>
                 </div>
-                <button class="btn service__card-btn">
-                    связаться с нами
+                <button class="btn service__card-btn btn-form">
+                    Связаться с нами
                 </button>
             </div>
         </div>
     </div>
 </section>
-        <section class='contacts'>
+        <section class='contacts' id="contacts">
     <div class='container contacts__container'>
         <h2 class="contacts__title">
             Наши контакты
@@ -388,7 +427,7 @@
                 </div>
                 <div class="contact__address-card">
                     <img src="img/contacts/address-logo-2.svg" alt="" class="contacts__address-card-logo">
-                    <a href="tel: +79883233799" class="contacts__address-card-text contacts__address-card-text_center">
+                    <a href="tel:+79883233799" class="contacts__address-card-text contacts__address-card-text_center">
                         +7(988)323-37-99
                     </a>
                 </div>
@@ -400,11 +439,13 @@
                     </a>
                 </div>
                 <div class="contact__address-card contact__address-card_logo-box">
-                    <a href="" class="contacts__address-card-link">
+                    <a target="_blank" href="https://vk.com/id622825132" class="contacts__address-card-link">
                         <img src="img/contacts/address-link-logo-1.svg" alt=""
                             class="contacts__address-card-link-logo">
                     </a>
-                    <a href="" class="contacts__address-card-link">
+                    <a target="_blank"
+                        href="https://www.avito.ru/vorovskogo/predlozheniya_uslug/svap_dvigateley_toyota_om-606_901005878?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing_seller"
+                        class="contacts__address-card-link">
                         <img src="img/contacts/address-link-logo-2.svg" alt=""
                             class="contacts__address-card-link-logo">
                     </a>
@@ -421,7 +462,7 @@
                         </h3>
                     </div>
                     <div class="form__row">
-                        <label class="form__label" for="name">имя</label>
+                        <label class="form__label" for="name">*имя</label>
                         <input id="name" name="name" class="form__input _req" type="text">
                     </div>
                     <div class="form__row">
@@ -429,7 +470,7 @@
                         <input id="tel" name="tel" class="form__input" type="tel">
                     </div>
                     <div class="form__row">
-                        <label class="form__label" for="email">email</label>
+                        <label class="form__label" for="email">*email</label>
                         <input id="email" name="email" class="form__input _req _email" type="email">
                     </div>
                     <div class="form__row">
@@ -437,7 +478,7 @@
                         <input id="text" name="text" class="form__text-area" type="text">
                     </div>
                     <div class="form__btn-box">
-                        <button class="form__btn btn">связаться с нами</button>
+                        <button class="form__btn btn">Отправить</button>
                     </div>
                 </form>
                 <!-- сообщение об ошибке -->
@@ -458,14 +499,14 @@
     </main>
     <footer class="footer">
     <div class="container footer__container">
-        <a href="#" class="logo-link">
+        <a href="#banner" class="logo-link">
             <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" class="logo"></picture>
         </a>
         <nav class="nav">
-            <a href="" class="nav__link">О компании</a>
-            <a href="" class="nav__link">Преимущеста</a>
-            <a href="" class="nav__link">Услуги</a>
-            <a href="" class="nav__link">Контакты</a>
+            <a href="#about" class="nav__link _scroll">О компании</a>
+            <a href="#advantages" class="nav__link _scroll">Преимущеста</a>
+            <a href="#services" class="nav__link _scroll">Услуги</a>
+            <a href="#contacts" class="nav__link _scroll">Контакты</a>
         </nav>
         <div class="header__contact-box footer__contact-box">
             <a href="tel:+79883233799" class="header__contact-tel">
@@ -478,7 +519,7 @@
                 суббота: 9:00 - 16:00
             </p>
         </div>
-        <button class="btn header__btn">связаться с нами</button>
+        <button class="btn header__btn btn-form">Связаться с нами</button>
 </footer>
     <script type="module" src="js/script.min.js"></script>
 </body>

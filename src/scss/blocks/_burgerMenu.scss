@@ -90,6 +90,7 @@
     transition: 0.5s;
     transform: translateY(-436px);
     background-color: var(--primary-blue);
+    z-index: -10;
     &.active {
         transition: 0.5s;
         opacity: 1;

@@ -1,4 +1,4 @@
-<section class='contacts'>
+<section class='contacts' id="contacts">
     <div class='container contacts__container'>
         <h2 class="contacts__title">
             Наши контакты
@@ -13,7 +13,7 @@
                 </div>
                 <div class="contact__address-card">
                     <img src="@img/contacts/address-logo-2.svg" alt="" class="contacts__address-card-logo">
-                    <a href="tel: +79883233799" class="contacts__address-card-text contacts__address-card-text_center">
+                    <a href="tel:+79883233799" class="contacts__address-card-text contacts__address-card-text_center">
                         +7(988)323-37-99
                     </a>
                 </div>
@@ -25,11 +25,13 @@
                     </a>
                 </div>
                 <div class="contact__address-card contact__address-card_logo-box">
-                    <a href="" class="contacts__address-card-link">
+                    <a target="_blank" href="https://vk.com/id622825132" class="contacts__address-card-link">
                         <img src="@img/contacts/address-link-logo-1.svg" alt=""
                             class="contacts__address-card-link-logo">
                     </a>
-                    <a href="" class="contacts__address-card-link">
+                    <a target="_blank"
+                        href="https://www.avito.ru/vorovskogo/predlozheniya_uslug/svap_dvigateley_toyota_om-606_901005878?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing_seller"
+                        class="contacts__address-card-link">
                         <img src="@img/contacts/address-link-logo-2.svg" alt=""
                             class="contacts__address-card-link-logo">
                     </a>
@@ -46,7 +48,7 @@
                         </h3>
                     </div>
                     <div class="form__row">
-                        <label class="form__label" for="name">имя</label>
+                        <label class="form__label" for="name">*имя</label>
                         <input id="name" name="name" class="form__input _req" type="text">
                     </div>
                     <div class="form__row">
@@ -54,7 +56,7 @@
                         <input id="tel" name="tel" class="form__input" type="tel">
                     </div>
                     <div class="form__row">
-                        <label class="form__label" for="email">email</label>
+                        <label class="form__label" for="email">*email</label>
                         <input id="email" name="email" class="form__input _req _email" type="email">
                     </div>
                     <div class="form__row">
@@ -62,7 +64,7 @@
                         <input id="text" name="text" class="form__text-area" type="text">
                     </div>
                     <div class="form__btn-box">
-                        <button class="form__btn btn">связаться с нами</button>
+                        <button class="form__btn btn">Отправить</button>
                     </div>
                 </form>
                 <!-- сообщение об ошибке -->

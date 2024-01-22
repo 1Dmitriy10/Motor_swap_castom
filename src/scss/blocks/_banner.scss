@@ -1,6 +1,10 @@
 .banner {
     margin-top: 114px;
     padding: 0;
+    scroll-margin-block-start: 100px;
+    @media (max-width: 600px) {
+        margin-top: 83px;
+    }
 }
 .banner__slider {
     position: relative !important;
@@ -31,6 +35,7 @@
     position: relative;
     z-index: 10;
     margin-left: 20px;
+    width: fit-content;
     @media (max-width: 800px) {
         margin-left: auto;
         margin-right: auto;
@@ -57,12 +62,12 @@ li.banner__text {
     }
 }
 .banner__text-hidden {
-    @media (max-width: 900px) {
+    @media (max-width: 940px) {
         display: none;
     }
 }
 .banner__text {
-    @media (max-width: 1010px) {
+    @media (max-width: 1030px) {
         margin-bottom: 10px;
         font-size: 16px;
     }
