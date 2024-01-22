@@ -1029,6 +1029,8 @@ a.contacts__address-card-text:hover {
   padding: 5px 45px;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .form__title {
