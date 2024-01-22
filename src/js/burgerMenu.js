@@ -9,12 +9,12 @@ export function getMobMenu() {
     function actionMenu() {
         menu.classList.toggle('active')
         burgerMenu.classList.toggle('active')
-        if (menu.className == "nav_box-mob active") {
-            console.log(body)
-            body.style.cssText = `overflow: hidden`;
-        } else {
-            body.style.cssText = `overflow: auto`;
-        }
+        // if (menu.className == "nav_box-mob active") {
+        //     console.log(body)
+        //     body.style.cssText = `overflow: hidden`;
+        // } else {
+        //     body.style.cssText = `overflow: auto`;
+        // }
         //отключение мобильного меню при клике по элементу меню
         navLinks.forEach(el => {
             el.addEventListener("click", () => {
