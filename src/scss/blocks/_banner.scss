@@ -3,7 +3,7 @@
     padding: 0;
     scroll-margin-block-start: 100px;
     @media (max-width: 600px) {
-        margin-top: 83px;
+        margin-top: 82px;
     }
 }
 .banner__slider {
@@ -11,6 +11,9 @@
     width: 100% !important;
     height: 0 !important;
     padding-bottom: prop(720, 1260) !important;
+    @media (max-width: 450px) {
+        min-height: 250px;
+    }
 }
 .banner__container {
     padding: 0;

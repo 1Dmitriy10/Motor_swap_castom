@@ -5,7 +5,11 @@
 .about__text {
     color: var(--primary-black);
     font-weight: 500;
+    @include adaptiveValue(font-size, 18, 14);
     &:last-child {
         margin-bottom: 0;
+    }
+    @media (max-width: 600px) {
+        margin-bottom: 10px;
     }
 }
